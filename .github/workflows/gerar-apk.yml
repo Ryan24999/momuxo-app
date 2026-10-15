@@ -14,7 +14,7 @@ jobs:
           distribution: temurin
           java-version: '17'
       - name: Configurar Android SDK
-        uses: android-actions/setup-android@v3
+        uses: android-actions/setup-android@v4
       - name: Instalar API 35
         run: sdkmanager 'platforms;android-35' 'build-tools;35.0.0'
       - name: Configurar Gradle
@@ -28,4 +28,3 @@ jobs:
         with:
           name: Momuxo-APK
           path: app/build/outputs/apk/debug/app-debug.apk
-          if-no-files-found: error
