@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'br.com.ryandebolso.momuxa'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'br.com.ryandebolso.momuxa'
+        minSdk 26
+        targetSdk 34
+        versionCode 3
+        versionName '1.0.2'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
